@@ -1,0 +1,118 @@
+<section id="about" class="py-24 bg-white dark:bg-slate-950 transition-colors duration-300 relative overflow-hidden">
+  
+  <div class="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-screen-xl mx-auto px-4 relative z-10">
+    
+    <div class="flex items-center gap-4 mb-12">
+      <h2 class="text-3xl font-bold text-slate-900 dark:text-white">
+        <span class="text-emerald-600 dark:text-emerald-500 font-mono">01.</span> {{ languageService.data().about.title }}
+      </h2>
+      <div class="h-px bg-gray-200 dark:bg-slate-800 flex-grow max-w-xs"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+       <div class="space-y-6">
+          <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            {{ languageService.data().about.p1 }}
+          </p>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+            {{ languageService.data().about.p2 }}
+          </p>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+            {{ languageService.data().about.p3 }}
+          </p>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+            {{ languageService.data().about.p4 }}
+          </p>
+  
+          <div class="pt-4">
+            <a href="CV_Erik_Axel_Loredo_Lopez.pdf" target="_blank" download="CV_Erik_Axel_Loredo_Lopez.pdf" class="inline-flex items-center font-bold text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors group">
+              {{ languageService.data().about.btn_cv }}
+              <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+          </div>
+       </div>
+
+       <div>
+         <h3 class="text-sm font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-6 flex items-center gap-2">
+            <span class="w-2 h-2 bg-emerald-500 rounded-sm"></span> {{ languageService.data().about.skills_title }}
+          </h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                  <span class="icon icon-python"></span>
+                </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">Python</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">Scripting & Data</p>
+              </div>
+
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                  <span class="icon icon-laravel"></span>
+                </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">Laravel</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">Backend API</p>
+              </div>
+
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                 <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                   <span class="icon icon-angular"></span>
+                 </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">Angular</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">Frontend</p>
+              </div>
+
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                 <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                   <span class="icon icon-mysql"></span>
+                 </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">MySQL</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">Database</p>
+              </div>
+
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                 <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                   <span class="icon icon-github"></span>
+                 </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">Github</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">Version Control</p>
+              </div>
+
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                  <span class="icon icon-mongodb"></span>
+                </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">MongoDB</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">NoSQL Database</p>
+              </div>
+
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                  <span class="icon icon-godot"></span>
+                </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">Godot</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">Game Engine</p>
+              </div>
+
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                  <span class="icon icon-cplusplus"></span>
+                </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">C++</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">Systems Programming</p>
+              </div>
+
+              <div class="p-4 border border-gray-200 dark:border-slate-800 rounded hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-900/10 transition-all group cursor-default">
+                <div class="text-emerald-600 dark:text-emerald-400 mb-2 group-hover:scale-110 transition-transform origin-left">
+                  <span class="icon icon-flutter"></span>
+                </div>
+                <h4 class="font-bold text-slate-800 dark:text-slate-200">Flutter</h4>
+                <p class="text-xs text-slate-500 dark:text-slate-500">Cross-platform Apps</p>
+              </div>
+           </div>
+       </div>
+
+    </div>
+  </div>
+</section>

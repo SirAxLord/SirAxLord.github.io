@@ -1,0 +1,23 @@
+/* Iconos con máscara para colorear via currentColor */
+.icon {
+	display: inline-block;
+	width: 2rem; /* w-8 */
+	height: 2rem; /* h-8 */
+	background-color: currentColor;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+}
+
+.icon-python { -webkit-mask-image: url('/assets/icons/python.svg'); mask-image: url('/assets/icons/python.svg'); }
+.icon-laravel { -webkit-mask-image: url('/assets/icons/laravel.svg'); mask-image: url('/assets/icons/laravel.svg'); }
+.icon-angular { -webkit-mask-image: url('/assets/icons/angular.svg'); mask-image: url('/assets/icons/angular.svg'); }
+.icon-mysql { -webkit-mask-image: url('/assets/icons/mysql.svg'); mask-image: url('/assets/icons/mysql.svg'); }
+.icon-github { -webkit-mask-image: url('/assets/icons/github.svg'); mask-image: url('/assets/icons/github.svg'); }
+.icon-mongodb { -webkit-mask-image: url('/assets/icons/mongodb.svg'); mask-image: url('/assets/icons/mongodb.svg'); }
+.icon-godot { -webkit-mask-image: url('/assets/icons/godot.svg'); mask-image: url('/assets/icons/godot.svg'); }
+.icon-cplusplus { -webkit-mask-image: url('/assets/icons/cplusplus.svg'); mask-image: url('/assets/icons/cplusplus.svg'); }
+.icon-flutter { -webkit-mask-image: url('/assets/icons/flutter.svg'); mask-image: url('/assets/icons/flutter.svg'); }
