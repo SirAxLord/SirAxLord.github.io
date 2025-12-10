@@ -1,0 +1,57 @@
+<section class="py-24 bg-white dark:bg-slate-950 transition-colors duration-300">
+  <div class="max-w-screen-xl mx-auto px-4">
+    <div class="flex items-center gap-4 mb-8">
+      <a [routerLink]="'/'" fragment="projects" class="text-sm font-mono text-emerald-600 dark:text-emerald-400">← {{ languageService.currentLang() === 'es' ? 'Volver' : 'Back' }}</a>
+      <div class="h-px bg-gray-200 dark:bg-slate-800 flex-grow"></div>
+    </div>
+
+    @if (project()) {
+      <div class="rounded-lg border border-gray-200 dark:border-slate-800 p-6">
+        <div class="flex items-center gap-3 mb-2">
+          <h1 class="text-2xl font-bold text-slate-900 dark:text-white">{{ project()!.title[languageService.currentLang()] }}</h1>
+          <span class="px-2 py-1 text-xs font-mono rounded border" [ngClass]="categoryClasses[project()!.category]">{{ project()!.category }}</span>
+        </div>
+
+        <p class="text-slate-600 dark:text-slate-400">
+          {{ (project()!.longDescription?.[languageService.currentLang()] || project()!.description[languageService.currentLang()]) }}
+        </p>
+
+        <div class="mt-6 grid md:grid-cols-2 gap-4 items-stretch">
+          @if (project()!.image && !mainImageError()) {
+            <img [src]="project()!.image" (error)="markMainImageError()" class="w-full h-64 object-cover rounded border border-gray-200 dark:border-slate-800"/>
+          } @else {
+            <div class="h-64 rounded border backdrop-blur-sm flex items-center justify-center text-3xl font-mono font-bold text-slate-400 dark:text-slate-600 border-slate-300 dark:border-slate-700">
+              {{ project()!.category }}
+            </div>
+          }
+
+          @if (project()!.gallery?.length) {
+            <div class="grid grid-cols-2 gap-3">
+              @for (img of project()!.gallery!; track img) {
+                <img [src]="img" class="w-full h-32 object-cover rounded border border-gray-200 dark:border-slate-800" />
+              }
+            </div>
+          } @else {
+            <div class="grid grid-cols-2 gap-3">
+              <div class="h-32 bg-slate-200 dark:bg-slate-800 rounded"></div>
+              <div class="h-32 bg-slate-200 dark:bg-slate-800 rounded"></div>
+              <div class="h-32 bg-slate-200 dark:bg-slate-800 rounded"></div>
+              <div class="h-32 bg-slate-200 dark:bg-slate-800 rounded"></div>
+            </div>
+          }
+        </div>
+
+        <div class="mt-6 flex gap-3">
+          <a [href]="project()!.githubLink" target="_blank" class="px-4 py-2 border border-emerald-500 text-emerald-600 dark:text-emerald-400 rounded">{{ languageService.currentLang() === 'es' ? 'Ver Código' : 'View Code' }}</a>
+          @if (project()!.demoLink) {
+            <a [href]="project()!.demoLink" target="_blank" class="px-4 py-2 bg-emerald-600 text-white rounded">{{ languageService.currentLang() === 'es' ? 'Ver Demo' : 'View Demo' }}</a>
+          }
+        </div>
+      </div>
+    } @else {
+      <div class="rounded-lg border border-red-200 p-6">
+        <p class="text-red-600">{{ languageService.currentLang() === 'es' ? 'Proyecto no encontrado.' : 'Project not found.' }}</p>
+      </div>
+    }
+  </div>
+</section>

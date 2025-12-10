@@ -1,4 +1,4 @@
-<section id="projects" class="py-24 bg-white dark:bg-slate-950 transition-colors duration-300">
+<section id="projects" class="py-24 scroll-mt-24 bg-white dark:bg-slate-950 transition-colors duration-300">
   <div class="max-w-screen-xl mx-auto px-4">
     
     <div class="flex items-center gap-4 mb-16">
@@ -16,18 +16,27 @@
           
           <div class="h-48 bg-slate-200 dark:bg-slate-800 relative overflow-hidden flex items-center justify-center shrink-0">
               
-              @if (project.image) {
-                <img [src]="project.image" [alt]="project.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+              @if (project.image && !imageError()[project.id]) {
+                <img [src]="project.image" [alt]="project.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" (error)="markImageError(project.id)">
               } @else {
-                <span class="text-6xl text-slate-300 dark:text-slate-700 font-mono font-bold group-hover:scale-110 transition-transform duration-500">
+                <div class="px-4 py-2 rounded border backdrop-blur-sm text-3xl md:text-4xl font-mono font-bold group-hover:scale-110 transition-transform duration-500" [ngClass]="categoryClasses[project.category]">
                   {{ project.category }}
-                </span>
+                </div>
               }
               
-              <div class="absolute inset-0 bg-emerald-600/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a [href]="project.githubLink" target="_blank" class="px-6 py-2 bg-white text-emerald-600 font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <div class="absolute inset-0 bg-emerald-600/90 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <a [href]="project.githubLink" target="_blank" class="px-4 py-2 bg-white text-emerald-700 font-bold rounded-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     {{ languageService.data().projects.btn_code }}
                   </a>
+                  @if (project.demoLink) {
+                    <a [href]="project.demoLink" target="_blank" class="px-4 py-2 bg-white text-emerald-700 font-bold rounded-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      Ver Demo
+                    </a>
+                  } @else {
+                    <a [routerLink]="['/project', project.id]" class="px-4 py-2 bg-white text-emerald-700 font-bold rounded-sm transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      Ver Más
+                    </a>
+                  }
               </div>
           </div>
   
