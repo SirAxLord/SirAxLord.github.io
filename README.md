@@ -1,3 +1,20 @@
+# Portafolio de Erik Axel Loredo López
+
+Proyecto de portafolio personal construido con Angular (componentes standalone), Tailwind y despliegue en GitHub Pages.
+
+Características principales
+- Multilenguaje: ES/EN mediante `LanguageService` con signals.
+- Secciones: Hero, Sobre mí, Proyectos, Contacto y Footer.
+- Tech Stack con iconos uniformados (simple-icons) y soporte dark mode.
+- Renderizado estático (SPA) optimizado para GitHub Pages.
+
+Estructura relevante
+- `src/app/services/language.service.ts`: Diccionario ES/EN y toggle.
+- `src/app/components/*`: Componentes standalone por sección.
+- `public/assets/icons`: Iconos SVG de tecnologías.
+
+Autor
+- Diseñado y construido por Erik Axel Loredo López.
 # Portfolio
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
