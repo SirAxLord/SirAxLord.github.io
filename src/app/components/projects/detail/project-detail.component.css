@@ -1,1 +1,59 @@
+/* Lightbox styles */
+.lb-overlay {
+	animation: lbFade 200ms ease-out;
+	background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+	background-size: 24px 24px;
+}
+
+.lb-image {
+	animation: lbZoom 200ms ease-out;
+	box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+}
+
+.lb-btn {
+	transition: transform 150ms ease, background-color 150ms ease, opacity 150ms ease;
+}
+.lb-btn:hover {
+	transform: scale(1.05);
+}
+
+.lb-dots {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	align-items: center;
+}
+.lb-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 9999px;
+	opacity: 0.5;
+	transition: opacity 150ms ease, transform 150ms ease;
+	border: 1px solid rgba(255,255,255,0.5);
+}
+.lb-dot.active {
+	opacity: 1;
+	transform: scale(1.1);
+	border-color: rgba(255,255,255,0.9);
+}
+
+@keyframes lbFade {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+@keyframes lbZoom {
+	from { transform: scale(0.98); }
+	to   { transform: scale(1); }
+}
+
+.lb-topbar {
+	background: linear-gradient(to right, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+	border-bottom: 1px solid rgba(255,255,255,0.15);
+	border-radius: 8px 8px 0 0;
+}
+
+.lb-caption {
+	color: rgba(255,255,255,0.8);
+}
 /* Estilos básicos del detalle de proyecto */

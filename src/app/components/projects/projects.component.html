@@ -17,7 +17,7 @@
           <div class="h-48 bg-slate-200 dark:bg-slate-800 relative overflow-hidden flex items-center justify-center shrink-0">
               
               @if (project.image && !imageError()[project.id]) {
-                <img [src]="project.image" [alt]="project.title" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" (error)="markImageError(project.id)">
+                <img [src]="project.image" [alt]="project.title" class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110" (error)="markImageError(project.id)">
               } @else {
                 <div class="px-4 py-2 rounded border backdrop-blur-sm text-3xl md:text-4xl font-mono font-bold group-hover:scale-110 transition-transform duration-500" [ngClass]="categoryClasses[project.category]">
                   {{ project.category }}

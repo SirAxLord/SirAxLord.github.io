@@ -76,11 +76,23 @@ export const PROJECTS: ProjectI18n[] = [
       es: 'Frontend de alto rendimiento construido con Angular 19 y Angular Material. Implementa SSR para SEO, gestión de estado con RxJS, carrito y paneles protegidos.',
       en: 'High-performance frontend built with Angular 19 and Angular Material. Implements SSR for SEO, state management with RxJS, cart and protected admin panels.'
     },
+    longDescription: {
+      es: 'Este proyecto es un cliente de comercio electrónico desarrollado con Angular 19, que ofrece una experiencia de usuario fluida y receptiva. Utiliza Angular Material para una interfaz moderna y atractiva, y aprovecha el renderizado del lado del servidor (SSR) para mejorar el SEO y los tiempos de carga iniciales.\n\nLa aplicación implementa la gestión de estado utilizando RxJS, lo que permite un manejo eficiente de datos reactivos en toda la aplicación. Incluye funcionalidades clave como un carrito de compras dinámico y paneles administrativos protegidos mediante autenticación, garantizando la seguridad y privacidad de los datos del usuario.',
+      en: 'This project is an e-commerce client developed with Angular 19, providing a smooth and responsive user experience. It uses Angular Material for a modern and attractive interface, and leverages Server-Side Rendering (SSR) to enhance SEO and initial load times.\n\nThe application implements state management using RxJS, allowing for efficient handling of reactive data throughout the app. It includes key features such as a dynamic shopping cart and protected admin panels through authentication, ensuring user data security and privacy.'
+    },
     category: 'WEB',
     tags: ['Angular 19', 'SSR', 'Material', 'RxJS'],
     githubLink: 'https://github.com/SirAxLord/Ventas-PC-Front',
-    image: '/assets/projects/angular-client.jpg',
-    demoLink: 'https://siraxlord.github.io/Ventas-PC-Front/'
+    image: '/assets/projects/angular-client.png',
+    // demoLink: 'https://siraxlord.github.io/Ventas-PC-Front/'
+    gallery: [
+      '/assets/projects/angular-client/angular-1.png',
+      '/assets/projects/angular-client/angular-2.png',
+      '/assets/projects/angular-client/angular-3.png',
+      '/assets/projects/angular-client/angular-4.png',
+      '/assets/projects/angular-client/angular-5.png',
+      '/assets/projects/angular-client/angular-6.png'
+    ]
   },
   {
     id: 6,

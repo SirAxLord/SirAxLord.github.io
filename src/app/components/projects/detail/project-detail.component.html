@@ -17,19 +17,25 @@
         </p>
 
         <div class="mt-6 grid md:grid-cols-2 gap-4 items-stretch">
-          @if (project()!.image && !mainImageError()) {
-            <img [src]="project()!.image" (error)="markMainImageError()" class="w-full h-64 object-cover rounded border border-gray-200 dark:border-slate-800"/>
-          } @else {
-            <div class="h-64 rounded border backdrop-blur-sm flex items-center justify-center text-3xl font-mono font-bold text-slate-400 dark:text-slate-600 border-slate-300 dark:border-slate-700">
-              {{ project()!.category }}
-            </div>
-          }
+          <div>
+            <h3 class="text-sm font-bold font-mono uppercase tracking-wider text-slate-600 dark:text-slate-300 mb-3">{{ languageService.currentLang() === 'es' ? 'Vista Principal' : 'Main View' }}</h3>
+            @if (mainImage() && !mainImageError()) {
+              <img [src]="mainImage()" (error)="markMainImageError()" (click)="openLightbox(0)" class="w-full max-h-[70vh] object-contain rounded border border-gray-200 dark:border-slate-800 cursor-zoom-in"/>
+            } @else {
+              <div class="h-64 rounded border backdrop-blur-sm flex items-center justify-center text-3xl font-mono font-bold text-slate-400 dark:text-slate-600 border-slate-300 dark:border-slate-700">
+                {{ project()!.category }}
+              </div>
+            }
+          </div>
 
           @if (project()!.gallery?.length) {
-            <div class="grid grid-cols-2 gap-3">
-              @for (img of project()!.gallery!; track img) {
-                <img [src]="img" class="w-full h-32 object-cover rounded border border-gray-200 dark:border-slate-800" />
-              }
+            <div>
+              <h3 class="text-sm font-bold font-mono uppercase tracking-wider text-slate-600 dark:text-slate-300 mb-3">{{ languageService.currentLang() === 'es' ? 'Galería de Fotos' : 'Photo Gallery' }}</h3>
+              <div class="grid grid-cols-2 gap-3">
+                @for (img of project()!.gallery!; track img; let i = $index) {
+                  <img [src]="img" (click)="openLightbox((project()!.image ? 1 : 0) + i)" class="w-full h-32 object-cover rounded border border-gray-200 dark:border-slate-800 cursor-pointer hover:opacity-90" />
+                }
+              </div>
             </div>
           } @else {
             <div class="grid grid-cols-2 gap-3">
@@ -51,6 +57,56 @@
     } @else {
       <div class="rounded-lg border border-red-200 p-6">
         <p class="text-red-600">{{ languageService.currentLang() === 'es' ? 'Proyecto no encontrado.' : 'Project not found.' }}</p>
+      </div>
+    }
+
+    @if (lightboxOpen()) {
+      <div class="lb-overlay fixed inset-0 bg-black/85 backdrop-blur-sm z-50 flex items-center justify-center" (click)="closeLightbox()" (keydown)="onKeyDown($event)" tabindex="0">
+        <div class="relative max-w-screen-xl w-full px-6" (click)="$event.stopPropagation()">
+          <!-- Header bar -->
+          <div class="lb-topbar flex items-center justify-between mb-3 text-white px-4 py-2 rounded">
+            <div class="flex items-center gap-2">
+              <span class="text-sm font-bold font-mono">{{ project()!.title[languageService.currentLang()] }}</span>
+              <span class="text-xs font-mono opacity-80">{{ currentIndex() + 1 }} / {{ galleryLength() }}</span>
+            </div>
+            <div class="text-xs opacity-70 font-mono hidden sm:block">{{ languageService.currentLang() === 'es' ? 'ESC: Cerrar • ←/→: Navegar' : 'ESC: Close • ←/→: Navigate' }}</div>
+          </div>
+
+          <!-- Main image -->
+          <img [src]="lightboxImages()[currentIndex()]"
+            class="lb-image w-full max-h-[80vh] object-contain rounded-lg select-none"
+            [style.transform]="'translate(' + translateX() + 'px,' + translateY() + 'px) scale(' + scale() + ')'"
+            [style.cursor]="scale() > 1 ? (isPanning() ? 'grabbing' : 'grab') : 'default'"
+            (wheel)="onWheel($event)"
+            (mousedown)="onMouseDown($event)"
+            (mousemove)="onMouseMove($event)"
+            (mouseup)="onMouseUp()"
+            (mouseleave)="onMouseLeave()"
+            (dblclick)="onDblClick()"
+            (touchstart)="onTouchStart($event)"
+            (touchmove)="onTouchMove($event)"
+            (touchend)="onTouchEnd()"
+            draggable="false" />
+
+          <!-- Caption -->
+          <div class="lb-caption mt-2 text-center text-sm">{{ languageService.currentLang() === 'es' ? 'Rueda del ratón: Zoom • Clic y arrastra: Pan • Doble clic: Reset • ←/→: Navegar' : 'Mouse wheel: Zoom • Click & drag: Pan • Double click: Reset • ←/→: Navigate' }}</div>
+
+          <!-- Controls -->
+          <button (click)="closeLightbox()" class="lb-btn absolute top-4 right-8 text-white bg-white/10 hover:bg-white/20 rounded-full w-10 h-10 border border-white/20 flex items-center justify-center">✕</button>
+          <button (click)="prev()" class="lb-btn absolute left-3 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-white/20 rounded-full w-12 h-12 border border-white/20 flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button (click)="next()" class="lb-btn absolute right-3 top-1/2 -translate-y-1/2 text-white bg-white/10 hover:bg-white/20 rounded-full w-12 h-12 border border-white/20 flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <!-- Dot indicators -->
+          <div class="lb-dots mt-4">
+            @for (img of lightboxImages(); track img; let i = $index) {
+              <button (click)="goTo(i)" class="lb-dot" [class.active]="currentIndex() === i" [style.backgroundColor]="currentIndex() === i ? 'white' : 'rgba(255,255,255,0.5)'" [attr.aria-label]="(languageService.currentLang() === 'es' ? 'Ir a la imagen ' : 'Go to image ') + (i + 1)"></button>
+            }
+          </div>
+        </div>
       </div>
     }
   </div>
