@@ -41,7 +41,7 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'API',
     tags: ['Laravel', 'Sanctum', 'MySQL', 'OpenAPI'],
     githubLink: 'https://github.com/SirAxLord/api-ventas-pc',
-    // image: '/assets/projects/laravel-api.jpg',
+    image: '/assets/projects/laravel-api.png',
     demoLink: 'https://api-ventas-pc-production-6b47.up.railway.app/'
   },
   {
