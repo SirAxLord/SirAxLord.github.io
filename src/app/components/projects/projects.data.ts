@@ -64,10 +64,19 @@ export const PROJECTS: ProjectI18n[] = [
       es: 'Backend RESTful escalable construido con Express 5 y Mongoose. Gestiona autenticación segura mediante JWT, control de roles y operaciones CRUD sobre una base de datos NoSQL (MongoDB).',
       en: 'Scalable RESTful backend built with Express 5 and Mongoose. Manages secure authentication via JWT, role-based access control, and CRUD operations on a NoSQL database (MongoDB).'
     },
+    longDescription: {
+      es: 'Esta API de comercio electrónico está desarrollada utilizando Node.js con el framework Express 5, proporcionando una arquitectura escalable y eficiente para manejar solicitudes HTTP. La base de datos utilizada es MongoDB, gestionada a través de Mongoose, lo que permite una fácil manipulación de datos NoSQL.\n\nLa API implementa autenticación segura mediante JSON Web Tokens (JWT), asegurando que solo los usuarios autorizados puedan acceder a ciertos recursos. Además, cuenta con un sistema de control de roles que define diferentes niveles de acceso para administradores y usuarios regulares. Las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) están disponibles para gestionar productos, usuarios y pedidos dentro del sistema de comercio electrónico.',
+      en: 'This e-commerce API is developed using Node.js with the Express 5 framework, providing a scalable and efficient architecture to handle HTTP requests. The database used is MongoDB, managed through Mongoose, allowing for easy manipulation of NoSQL data.\n\nThe API implements secure authentication using JSON Web Tokens (JWT), ensuring that only authorized users can access certain resources. Additionally, it features a role-based access control system that defines different access levels for administrators and regular users. CRUD (Create, Read, Update, Delete) operations are available to manage products, users, and orders within the e-commerce system.'
+    },
     category: 'API',
     tags: ['Node.js', 'Express', 'MongoDB', 'JWT'],
     githubLink: 'https://github.com/SirAxLord/Server-Valenzos-PC',
-    // image: '/assets/projects/node-api.jpg'
+    image: '/assets/projects/node-api.png',
+    gallery: [
+      '/assets/projects/api-node-js/api-node-1.png', 
+      '/assets/projects/api-node-js/api-node-2.png',
+      '/assets/projects/api-node-js/api-node-3.png',
+      '/assets/projects/api-node-js/api-node-4.png']
   },
   {
     id: 5,
