@@ -39,6 +39,19 @@ export class ProjectDetailComponent {
     return imgs;
   });
 
+  // Thumbnails (limit to 4 to avoid long pages)
+  thumbnailImages = computed(() => {
+    const p = this.project();
+    if (!p || !p.gallery) return [] as string[];
+    return p.gallery.slice(0, 4);
+  });
+  extraThumbCount = computed(() => {
+    const p = this.project();
+    if (!p || !p.gallery) return 0;
+    const count = p.gallery.length - 4;
+    return count > 0 ? count : 0;
+  });
+
   // Zoom & Pan state
   scale = signal(1);
   translateX = signal(0);

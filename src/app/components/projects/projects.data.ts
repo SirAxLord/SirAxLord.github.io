@@ -110,10 +110,31 @@ export const PROJECTS: ProjectI18n[] = [
       es: 'Plataforma administrativa para cadenas de cine construida con Laravel 12 y Livewire. Importación masiva (Excel/CSV), reportes PDF y notificaciones por correo.',
       en: 'Admin platform for cinema chains built with Laravel 12 and Livewire. Bulk import (Excel/CSV), PDF reports, and email notifications.'
     },
+    longDescription: {
+      es: 'El Sistema de Gestión de Cine es una plataforma administrativa desarrollada con Laravel 12 y Livewire, diseñada para facilitar la administración de cadenas de cines. La aplicación permite la importación masiva de datos mediante archivos Excel o CSV, lo que agiliza la carga de información sobre películas, horarios y salas.\n\nAdemás, el sistema genera reportes en formato PDF para un análisis detallado de las operaciones del cine, incluyendo ventas y asistencia. También cuenta con un sistema de notificaciones por correo electrónico para mantener informados a los administradores sobre eventos importantes, como actualizaciones de inventario o cambios en la programación.',
+      en: 'The Cinema Management System is an administrative platform developed with Laravel 12 and Livewire, designed to facilitate the management of cinema chains. The application allows for bulk data import using Excel or CSV files, streamlining the loading of information about movies, schedules, and theaters.\n\nAdditionally, the system generates reports in PDF format for detailed analysis of cinema operations, including sales and attendance. It also features an email notification system to keep administrators informed about important events, such as inventory updates or schedule changes.'
+    },
     category: 'WEB',
     tags: ['Laravel', 'Livewire', 'Excel Import', 'Dompdf'],
     githubLink: 'https://github.com/SirAxLord/Cine',
-    image: '/assets/projects/cine-admin.jpg'
+    image: '/assets/projects/cine/cine-1.png',
+    gallery: [
+      '/assets/projects/cine/cine-2.png',
+      '/assets/projects/cine/cine-3.png',
+      '/assets/projects/cine/cine-4.png',
+      '/assets/projects/cine/cine-5.png',
+      '/assets/projects/cine/cine-6.png',
+      '/assets/projects/cine/cine-7.png',
+      '/assets/projects/cine/cine-8.png',
+      '/assets/projects/cine/cine-9.png',
+      '/assets/projects/cine/cine-10.png',
+      '/assets/projects/cine/cine-11.png',
+      '/assets/projects/cine/cine-12.png',
+      '/assets/projects/cine/cine-13.png',
+      '/assets/projects/cine/cine-14.png',
+      '/assets/projects/cine/cine-15.png',
+      '/assets/projects/cine/cine-16.png'
+    ]
   },
   {
     id: 7,
