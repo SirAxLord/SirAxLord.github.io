@@ -167,9 +167,23 @@ export const PROJECTS: ProjectI18n[] = [
       es: 'Aplicación web para la gestión de inventario, administración de usuarios, préstamos y devoluciones.',
       en: 'Web app for inventory management, user administration, loans and returns.'
     },
+    longDescription: {
+      es: 'El Sistema de Biblioteca es una aplicación web desarrollada para facilitar la gestión integral de una biblioteca. La plataforma permite administrar el inventario de libros, gestionar usuarios, y controlar los préstamos y devoluciones de materiales bibliográficos.\n\nCon una interfaz intuitiva, los administradores pueden agregar, editar y eliminar registros de libros, así como supervisar el estado de los préstamos. Los usuarios pueden registrarse, buscar libros disponibles y realizar solicitudes de préstamo en línea, mejorando la eficiencia operativa de la biblioteca.',
+      en: 'The Library Management System is a web application developed to facilitate the comprehensive management of a library. The platform allows for the administration of book inventory, user management, and control of loans and returns of bibliographic materials.\n\nWith an intuitive interface, administrators can add, edit, and delete book records, as well as monitor the status of loans. Users can register, search for available books, and make loan requests online, enhancing the operational efficiency of the library.'
+    },
     category: 'WEB',
     tags: ['Laravel', 'TailwindCSS', 'Vite'],
     githubLink: 'https://github.com/SirAxLord/Biblioteca',
-    image: '/assets/projects/library.jpg'
+    image: '/assets/projects/libreria/libreria.png',
+    gallery: [
+      '/assets/projects/libreria/libreria-1.png',
+      '/assets/projects/libreria/libreria-2.png',
+      '/assets/projects/libreria/libreria-3.png',
+      '/assets/projects/libreria/libreria-4.png',
+      '/assets/projects/libreria/libreria-5.png',
+      '/assets/projects/libreria/libreria-6.png',
+      '/assets/projects/libreria/libreria-7.png',
+      '/assets/projects/libreria/libreria-8.png'
+    ]
   }
 ];
