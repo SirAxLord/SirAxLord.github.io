@@ -150,9 +150,8 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'GAME',
     tags: ['Godot', 'GDScript', 'Game Dev'],
     githubLink: 'https://github.com/SirAxLord/ElUltimoAlquimista',
-    image: '/assets/projects/alquimista/alquimista.png',
+    image: '/assets/projects/alquimista/alquimista-1.png',
     gallery: [
-      '/assets/projects/alquimista/alquimista-1.mp4',
       '/assets/projects/alquimista/alquimista-2.png',
       '/assets/projects/alquimista/alquimista-3.png',
       '/assets/projects/alquimista/alquimista-4.png',
