@@ -154,6 +154,11 @@ export class ProjectDetailComponent {
     return Math.sqrt(dx * dx + dy * dy);
   }
 
+  // Media helpers
+  isVideo(url: string) {
+    return /(\.mp4|\.webm|\.ogg)(\?.*)?$/i.test(url);
+  }
+
   categoryClasses: Record<'API' | 'WEB' | 'APP' | 'GAME', string> = {
     API: 'text-sky-700 dark:text-sky-300 border-sky-400 dark:border-sky-700 bg-sky-50/70 dark:bg-sky-900/30',
     WEB: 'text-emerald-700 dark:text-emerald-300 border-emerald-400 dark:border-emerald-700 bg-emerald-50/70 dark:bg-emerald-900/30',

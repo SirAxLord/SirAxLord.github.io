@@ -138,15 +138,27 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 7,
-    title: { es: 'El Último Alquimista', en: 'The Last Alchemist' },
+    title: { es: 'El Último Alquimista (Beta)', en: 'The Last Alchemist (Beta)' },
     description: {
       es: 'Videojuego de acción y plataformas desarrollado en Godot Engine con arquitectura de estados, HUD e inventario.',
       en: 'Action-platformer game in Godot Engine with state architecture, HUD and inventory.'
     },
+    longDescription: {
+      es: 'El Último Alquimista es un videojuego de acción y plataformas desarrollado utilizando Godot Engine. El juego presenta una arquitectura de estados que permite una gestión eficiente de las diferentes fases del juego, como menús, niveles y pantallas de pausa.\n\nEl jugador asume el papel de un alquimista que debe navegar a través de diversos niveles llenos de desafíos y enemigos. El juego cuenta con un HUD (Heads-Up Display) que proporciona información vital al jugador, como salud, inventario y objetivos. Además, el sistema de inventario permite al jugador recoger y utilizar diversos objetos y recursos para avanzar en su aventura.',
+      en: 'The Last Alchemist is an action-platformer game developed using Godot Engine. The game features a state architecture that allows for efficient management of different game phases, such as menus, levels, and pause screens.\n\nThe player takes on the role of an alchemist who must navigate through various levels filled with challenges and enemies. The game includes a HUD (Heads-Up Display) that provides vital information to the player, such as health, inventory, and objectives. Additionally, the inventory system allows the player to collect and use various items and resources to progress in their adventure.'
+    },
     category: 'GAME',
     tags: ['Godot', 'GDScript', 'Game Dev'],
     githubLink: 'https://github.com/SirAxLord/ElUltimoAlquimista',
-    image: '/assets/projects/godot-alchemist.jpg'
+    image: '/assets/projects/alquimista/alquimista.png',
+    gallery: [
+      '/assets/projects/alquimista/alquimista-1.mp4',
+      '/assets/projects/alquimista/alquimista-2.png',
+      '/assets/projects/alquimista/alquimista-3.png',
+      '/assets/projects/alquimista/alquimista-4.png',
+      '/assets/projects/alquimista/alquimista-5.png',
+      '/assets/projects/alquimista/alquimista-6.png'
+    ]
   },
   {
     id: 8,
@@ -155,10 +167,26 @@ export const PROJECTS: ProjectI18n[] = [
       es: 'Minijuego de estrategia en Godot 4.3. Coloca 9 coronas en un tablero 9x9 cumpliendo reglas estrictas.',
       en: 'Strategy puzzle game in Godot 4.3. Place 9 crowns on a 9x9 board following strict rules.'
     },
+    longDescription: {
+      es: 'El juego de lógica "Queen" es un minijuego desarrollado en Godot 4.3 que desafía a los jugadores a colocar 9 coronas en un tablero de 9x9 casillas. El objetivo es cumplir con una serie de reglas estrictas que limitan la colocación de las coronas, lo que requiere pensamiento estratégico y habilidades de resolución de problemas.\n\nLos jugadores deben asegurarse de que ninguna corona pueda atacar a otra, lo que implica que no pueden compartir la misma fila, columna o diagonal. Este desafío clásico pone a prueba la capacidad del jugador para planificar y anticipar movimientos futuros, ofreciendo una experiencia de juego envolvente y estimulante.',
+      en: 'The "Queen" logic puzzle game is a mini-game developed in Godot 4.3 that challenges players to place 9 crowns on a 9x9 board. The objective is to adhere to a set of strict rules that limit the placement of the crowns, requiring strategic thinking and problem-solving skills.\n\nPlayers must ensure that no crown can attack another, meaning they cannot share the same row, column, or diagonal. This classic challenge tests the player\'s ability to plan and anticipate future moves, providing an engaging and stimulating gaming experience.'
+    },
     category: 'GAME',
     tags: ['Godot', 'GDScript', 'Game Dev'],
     githubLink: 'https://github.com/SirAxLord/QueenVideogame',
-    image: '/assets/projects/godot-queen.jpg'
+    image: '/assets/projects/queen/Queens.png', 
+    gallery: [
+      '/assets/projects/queen/Queens-1.png',
+      '/assets/projects/queen/Queens-2.png',
+      '/assets/projects/queen/Queens-3.png',
+      '/assets/projects/queen/Queens-4.png',
+      '/assets/projects/queen/Queens-5.png',
+      '/assets/projects/queen/Queens-6.png',
+      '/assets/projects/queen/Queens-7.png',
+      '/assets/projects/queen/Queens-8.png',
+      '/assets/projects/queen/Queens-9.png',
+      '/assets/projects/queen/Queens-10.png'
+    ]
   },
   {
     id: 9,

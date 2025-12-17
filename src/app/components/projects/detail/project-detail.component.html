@@ -34,7 +34,14 @@
               <div class="grid grid-cols-2 gap-3">
                 @for (img of thumbnailImages(); track img; let i = $index) {
                   <div class="relative">
-                    <img [src]="img" (click)="openLightbox((project()!.image ? 1 : 0) + i)" class="w-full h-32 object-cover rounded border border-gray-200 dark:border-slate-800 cursor-pointer hover:opacity-90" />
+                    @if (!isVideo(img)) {
+                      <img [src]="img" (click)="openLightbox((project()!.image ? 1 : 0) + i)" class="w-full h-32 object-cover rounded border border-gray-200 dark:border-slate-800 cursor-pointer hover:opacity-90" />
+                    } @else {
+                      <video [src]="img" muted playsinline preload="metadata" (click)="openLightbox((project()!.image ? 1 : 0) + i)" class="w-full h-32 object-cover rounded border border-gray-200 dark:border-slate-800 cursor-pointer hover:opacity-90"></video>
+                      <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/60 text-white">▶</span>
+                      </div>
+                    }
                     @if (i === 3 && extraThumbCount() > 0) {
                       <button (click)="openLightbox(project()!.image ? 1 : 0)" class="absolute inset-0 bg-black/50 text-white text-sm font-mono rounded flex items-center justify-center">
                         {{ languageService.currentLang() === 'es' ? 'Ver todas' : 'See all' }} (+{{ extraThumbCount() }})
@@ -79,21 +86,25 @@
             <div class="text-xs opacity-70 font-mono hidden sm:block">{{ languageService.currentLang() === 'es' ? 'ESC: Cerrar • ←/→: Navegar' : 'ESC: Close • ←/→: Navigate' }}</div>
           </div>
 
-          <!-- Main image -->
-          <img [src]="lightboxImages()[currentIndex()]"
-            class="lb-image w-full max-h-[80vh] object-contain rounded-lg select-none"
-            [style.transform]="'translate(' + translateX() + 'px,' + translateY() + 'px) scale(' + scale() + ')'"
-            [style.cursor]="scale() > 1 ? (isPanning() ? 'grabbing' : 'grab') : 'default'"
-            (wheel)="onWheel($event)"
-            (mousedown)="onMouseDown($event)"
-            (mousemove)="onMouseMove($event)"
-            (mouseup)="onMouseUp()"
-            (mouseleave)="onMouseLeave()"
-            (dblclick)="onDblClick()"
-            (touchstart)="onTouchStart($event)"
-            (touchmove)="onTouchMove($event)"
-            (touchend)="onTouchEnd()"
-            draggable="false" />
+          <!-- Main media: image or video -->
+          @if (!isVideo(lightboxImages()[currentIndex()])) {
+            <img [src]="lightboxImages()[currentIndex()]"
+              class="lb-image w-full max-h-[80vh] object-contain rounded-lg select-none"
+              [style.transform]="'translate(' + translateX() + 'px,' + translateY() + 'px) scale(' + scale() + ')'"
+              [style.cursor]="scale() > 1 ? (isPanning() ? 'grabbing' : 'grab') : 'default'"
+              (wheel)="onWheel($event)"
+              (mousedown)="onMouseDown($event)"
+              (mousemove)="onMouseMove($event)"
+              (mouseup)="onMouseUp()"
+              (mouseleave)="onMouseLeave()"
+              (dblclick)="onDblClick()"
+              (touchstart)="onTouchStart($event)"
+              (touchmove)="onTouchMove($event)"
+              (touchend)="onTouchEnd()"
+              draggable="false" />
+          } @else {
+            <video [src]="lightboxImages()[currentIndex()]" controls autoplay playsinline class="w-full max-h-[80vh] object-contain rounded-lg"></video>
+          }
 
           <!-- Caption -->
           <div class="lb-caption mt-2 text-center text-sm">{{ languageService.currentLang() === 'es' ? 'Rueda del ratón: Zoom • Clic y arrastra: Pan • Doble clic: Reset • ←/→: Navegar' : 'Mouse wheel: Zoom • Click & drag: Pan • Double click: Reset • ←/→: Navigate' }}</div>
