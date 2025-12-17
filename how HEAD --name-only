@@ -1,0 +1,8 @@
+[33mcommit 2934ad83ddf3b9519c5827378d6ef5f7f6e4b1a5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: SirAxLord <A325641@alumnos.uaslp.mx>
+Date:   Wed Dec 17 16:07:13 2025 -0600
+
+    Correccion de archivos ultimo alquimista
+
+public/assets/projects/alquimista/alquimista-1.png
+src/app/components/projects/projects.data.ts
