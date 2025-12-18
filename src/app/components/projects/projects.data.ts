@@ -21,15 +21,21 @@ export const PROJECTS: ProjectI18n[] = [
       es: 'Asistente virtual conteinerizado con Docker capaz de resolver dudas sobre el plan de estudios de Ingeniería. Utiliza NLU para procesamiento de lenguaje natural y acciones personalizadas en Python para consultas de datos estructurados.',
       en: 'Dockerized virtual assistant capable of resolving queries about the Engineering curriculum. Uses NLU for natural language processing and custom Python actions for structured data queries.'
     },
-    // // longDescription: {
-    //   es: 'Este proyecto consiste en un chatbot desarrollado con Rasa, diseñado para asistir a estudiantes de ingeniería con información sobre el plan de estudios, asignaturas y requisitos académicos. El chatbot está conteinerizado utilizando Docker, lo que facilita su despliegue y escalabilidad.\n\nEl sistema utiliza técnicas de procesamiento de lenguaje natural (NLU) para comprender las consultas de los usuarios y proporcionar respuestas precisas. Además, se implementan acciones personalizadas en Python que permiten al chatbot acceder a datos estructurados, como horarios de clases y descripciones de cursos, para ofrecer información detallada y relevante.',
-    //   en: 'This project is a chatbot developed with Rasa, designed to assist engineering students with information about the curriculum, subjects, and academic requirements. The chatbot is containerized using Docker, which facilitates its deployment and scalability.\n\nThe system uses natural language processing (NLU) techniques to understand user queries and provide accurate responses. Additionally, custom actions in Python are implemented that allow the chatbot to access structured data, such as class schedules and course descriptions, to offer detailed and relevant information.'
-    // },
+    longDescription: {
+      es: 'Este proyecto consiste en un chatbot desarrollado con Rasa, diseñado para asistir a estudiantes de ingeniería con información sobre el plan de estudios, asignaturas y requisitos académicos. El chatbot está conteinerizado utilizando Docker, lo que facilita su despliegue y escalabilidad.\n\nEl sistema utiliza técnicas de procesamiento de lenguaje natural (NLU) para comprender las consultas de los usuarios y proporcionar respuestas precisas. Además, se implementan acciones personalizadas en Python que permiten al chatbot acceder a datos estructurados, como horarios de clases y descripciones de cursos, para ofrecer información detallada y relevante.',
+      en: 'This project is a chatbot developed with Rasa, designed to assist engineering students with information about the curriculum, subjects, and academic requirements. The chatbot is containerized using Docker, which facilitates its deployment and scalability.\n\nThe system uses natural language processing (NLU) techniques to understand user queries and provide accurate responses. Additionally, custom actions in Python are implemented that allow the chatbot to access structured data, such as class schedules and course descriptions, to offer detailed and relevant information.'
+    },
     category: 'APP',
     tags: ['Rasa', 'Python', 'Docker', 'NLP'],
     githubLink: 'https://github.com/SirAxLord/Chatbot',
-    image: '/assets/projects/rasa-chatbot.png',
-    // gallery: ['/assets/projects/rasa-1.png', '/assets/projects/rasa-2.png']
+    image: '/assets/projects/chatbot/chatbot.png',
+    gallery: [
+      '/assets/projects/chatbot/chatbot-1.png', 
+      '/assets/projects/chatbot/chatbot-2.png',
+      '/assets/projects/chatbot/chatbot-3.png',
+      '/assets/projects/chatbot/chatbot-4.png',
+      '/assets/projects/chatbot/chatbot-5.png',
+      '/assets/projects/chatbot/chatbot-6.png']
   },
   {
     id: 2,
@@ -71,7 +77,7 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'API',
     tags: ['Node.js', 'Express', 'MongoDB', 'JWT'],
     githubLink: 'https://github.com/SirAxLord/Server-Valenzos-PC',
-    image: '/assets/projects/node-api.png',
+    image: '/assets/projects/api-node-js/api-node-js.png',
     gallery: [
       '/assets/projects/api-node-js/api-node-1.png', 
       '/assets/projects/api-node-js/api-node-2.png',
@@ -92,7 +98,7 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'WEB',
     tags: ['Angular 19', 'SSR', 'Material', 'RxJS'],
     githubLink: 'https://github.com/SirAxLord/Ventas-PC-Front',
-    image: '/assets/projects/angular-client.png',
+    image: '/assets/projects/angular-client/angular-client.png',
     // demoLink: 'https://siraxlord.github.io/Ventas-PC-Front/'
     gallery: [
       '/assets/projects/angular-client/angular-1.png',
