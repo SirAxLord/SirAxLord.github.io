@@ -47,8 +47,13 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'API',
     tags: ['Laravel', 'Sanctum', 'MySQL', 'OpenAPI'],
     githubLink: 'https://github.com/SirAxLord/api-ventas-pc',
-    image: '/assets/projects/laravel-api.png',
-    demoLink: 'https://api-ventas-pc-production-6b47.up.railway.app/'
+    image: '/assets/projects/api-ventas-laravel/api-ventas-laravel.png',
+    // demoLink: 'https://api-ventas-pc-production-6b47.up.railway.app/,'
+    gallery: [
+      '/assets/projects/api-ventas-laravel/api-ventas-laravel-1.png', 
+      '/assets/projects/api-ventas-laravel/api-ventas-laravel-2.png',
+      '/assets/projects/api-ventas-laravel/api-ventas-laravel-3.png',
+      '/assets/projects/api-ventas-laravel/api-ventas-laravel-4.png']
   },
   {
     id: 3,
@@ -60,8 +65,33 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'WEB',
     tags: ['Laravel', 'Flux', 'Tailwind', 'Dompdf'],
     githubLink: 'https://github.com/SirAxLord/Ventas-PC',
-    image: '/assets/projects/flux-client.png',
-    demoLink: 'https://ventas-pc-production.up.railway.app/'
+    image: '/assets/projects/ventas-front-laravel/ventas-front-laravel.png',
+    // demoLink: 'https://ventas-pc-production.up.railway.app/,'
+    gallery: [
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-1.png', 
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-2.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-3.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-4.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-5.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-6.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-7.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-8.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-9.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-10.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-11.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-12.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-13.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-14.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-15.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-16.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-17.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-18.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-19.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-20.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-21.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-22.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-23.png',
+      '/assets/projects/ventas-front-laravel/ventas-front-laravel-24.png']
   },
   {
     id: 4,

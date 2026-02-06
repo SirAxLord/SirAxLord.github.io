@@ -9,7 +9,7 @@
 	animation: lbZoom 200ms ease-out;
 	box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
-}
+
 
 .lb-btn {
 	transition: transform 150ms ease, background-color 150ms ease, opacity 150ms ease;
