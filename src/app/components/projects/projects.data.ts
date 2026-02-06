@@ -28,14 +28,14 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'APP',
     tags: ['Rasa', 'Python', 'Docker', 'NLP'],
     githubLink: 'https://github.com/SirAxLord/Chatbot',
-    image: '/assets/projects/chatbot/chatbot.png',
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352331/chatbot_tss1vf.png',
     gallery: [
-      '/assets/projects/chatbot/chatbot-1.png', 
-      '/assets/projects/chatbot/chatbot-2.png',
-      '/assets/projects/chatbot/chatbot-3.png',
-      '/assets/projects/chatbot/chatbot-4.png',
-      '/assets/projects/chatbot/chatbot-5.png',
-      '/assets/projects/chatbot/chatbot-6.png']
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352327/chatbot-1_lkdndm.png', 
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352328/chatbot-2_i0bbpp.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352329/chatbot-3_lfj5xr.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352329/chatbot-4_ct4omw.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352330/chatbot-5_ey1nwi.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352331/chatbot-6_gmu2vn.png']
   },
   {
     id: 2,
@@ -47,13 +47,13 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'API',
     tags: ['Laravel', 'Sanctum', 'MySQL', 'OpenAPI'],
     githubLink: 'https://github.com/SirAxLord/api-ventas-pc',
-    image: '/assets/projects/api-ventas-laravel/api-ventas-laravel.png',
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352327/api-ventas-laravel_oyxedi.png',
     // demoLink: 'https://api-ventas-pc-production-6b47.up.railway.app/,'
     gallery: [
-      '/assets/projects/api-ventas-laravel/api-ventas-laravel-1.png', 
-      '/assets/projects/api-ventas-laravel/api-ventas-laravel-2.png',
-      '/assets/projects/api-ventas-laravel/api-ventas-laravel-3.png',
-      '/assets/projects/api-ventas-laravel/api-ventas-laravel-4.png']
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352324/api-ventas-laravel-1_hlnlko.png', 
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352325/api-ventas-laravel-2_odowql.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352325/api-ventas-laravel-3_x3n8iw.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352326/api-ventas-laravel-4_ylv23s.png']
   },
   {
     id: 3,
@@ -65,33 +65,33 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'WEB',
     tags: ['Laravel', 'Flux', 'Tailwind', 'Dompdf'],
     githubLink: 'https://github.com/SirAxLord/Ventas-PC',
-    image: '/assets/projects/ventas-front-laravel/ventas-front-laravel.png',
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352367/ventas-front-laravel_ylzjhf.png',
     // demoLink: 'https://ventas-pc-production.up.railway.app/,'
     gallery: [
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-1.png', 
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-2.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-3.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-4.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-5.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-6.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-7.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-8.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-9.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-10.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-11.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-12.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-13.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-14.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-15.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-16.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-17.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-18.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-19.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-20.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-21.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-22.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-23.png',
-      '/assets/projects/ventas-front-laravel/ventas-front-laravel-24.png']
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352353/ventas-front-laravel-1_dty4qp.png', 
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352359/ventas-front-laravel-2_io9poq.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352362/ventas-front-laravel-3_saxdfk.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352363/ventas-front-laravel-4_giz2ps.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352364/ventas-front-laravel-5_ugnngz.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352364/ventas-front-laravel-6_enoglv.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352365/ventas-front-laravel-7_c7gtga.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352365/ventas-front-laravel-8_jfnw7j.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352366/ventas-front-laravel-9_jsuqvq.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352353/ventas-front-laravel-10_wlcfky.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352354/ventas-front-laravel-11_irsh54.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352355/ventas-front-laravel-12_daks9i.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352355/ventas-front-laravel-13_a0doiu.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352356/ventas-front-laravel-14_rpwyjc.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352356/ventas-front-laravel-15_iodjp4.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352357/ventas-front-laravel-16_fj9dzc.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352357/ventas-front-laravel-17_ldy49u.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352358/ventas-front-laravel-18_yp7y36.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352359/ventas-front-laravel-19_ekhn43.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352360/ventas-front-laravel-20_eo3rsa.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352360/ventas-front-laravel-21_urgfns.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352361/ventas-front-laravel-22_no3ykr.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352361/ventas-front-laravel-23_e8jobv.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352362/ventas-front-laravel-24_thiqy8.png']
   },
   {
     id: 4,
@@ -107,12 +107,12 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'API',
     tags: ['Node.js', 'Express', 'MongoDB', 'JWT'],
     githubLink: 'https://github.com/SirAxLord/Server-Valenzos-PC',
-    image: '/assets/projects/api-node-js/api-node-js.png',
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352323/api-node-js_enb7gj.png',
     gallery: [
-      '/assets/projects/api-node-js/api-node-1.png', 
-      '/assets/projects/api-node-js/api-node-2.png',
-      '/assets/projects/api-node-js/api-node-3.png',
-      '/assets/projects/api-node-js/api-node-4.png']
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352320/api-node-1_mboldj.png', 
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352321/api-node-2_hhybog.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352322/api-node-3_ppqxj3.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352322/api-node-4_viprxl.png']
   },
   {
     id: 5,
@@ -128,15 +128,15 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'WEB',
     tags: ['Angular 19', 'SSR', 'Material', 'RxJS'],
     githubLink: 'https://github.com/SirAxLord/Ventas-PC-Front',
-    image: '/assets/projects/angular-client/angular-client.png',
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352320/angular-client_xnq3sj.png',
     // demoLink: 'https://siraxlord.github.io/Ventas-PC-Front/'
     gallery: [
-      '/assets/projects/angular-client/angular-1.png',
-      '/assets/projects/angular-client/angular-2.png',
-      '/assets/projects/angular-client/angular-3.png',
-      '/assets/projects/angular-client/angular-4.png',
-      '/assets/projects/angular-client/angular-5.png',
-      '/assets/projects/angular-client/angular-6.png'
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352315/angular-1_ofd5se.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352316/angular-2_vfdov5.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352317/angular-3_pi4be0.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352317/angular-4_ozhzey.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352318/angular-5_wrobv6.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352319/angular-6_pponzp.png'
     ]
   },
   {
@@ -153,23 +153,23 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'WEB',
     tags: ['Laravel', 'Livewire', 'Excel Import', 'Dompdf'],
     githubLink: 'https://github.com/SirAxLord/Cine',
-    image: '/assets/projects/cine/cine-1.png',
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352332/cine-1_uqksox.png',
     gallery: [
-      '/assets/projects/cine/cine-2.png',
-      '/assets/projects/cine/cine-3.png',
-      '/assets/projects/cine/cine-4.png',
-      '/assets/projects/cine/cine-5.png',
-      '/assets/projects/cine/cine-6.png',
-      '/assets/projects/cine/cine-7.png',
-      '/assets/projects/cine/cine-8.png',
-      '/assets/projects/cine/cine-9.png',
-      '/assets/projects/cine/cine-10.png',
-      '/assets/projects/cine/cine-11.png',
-      '/assets/projects/cine/cine-12.png',
-      '/assets/projects/cine/cine-13.png',
-      '/assets/projects/cine/cine-14.png',
-      '/assets/projects/cine/cine-15.png',
-      '/assets/projects/cine/cine-16.png'
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352337/cine-2_rsbj7u.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352337/cine-3_q89qfu.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352338/cine-4_qvh7af.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352338/cine-5_flfgvn.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352339/cine-6_pisxt2.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352339/cine-7_otmogf.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352340/cine-8_bismlq.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352341/cine-9_tavy5z.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352332/cine-10_fbeiup.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352333/cine-11_faamxw.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352334/cine-12_g7qlej.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352334/cine-13_zmaz0b.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352335/cine-14_ysivo7.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352335/cine-15_mnmnyh.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352336/cine-16_gdtkta.png'
     ]
   },
   {
@@ -186,13 +186,13 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'GAME',
     tags: ['Godot', 'GDScript', 'Game Dev'],
     githubLink: 'https://github.com/SirAxLord/ElUltimoAlquimista',
-    image: '/assets/projects/alquimista/alquimista-1.png',
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352312/alquimista-1_gholwc.png',
     gallery: [
-      '/assets/projects/alquimista/alquimista-2.png',
-      '/assets/projects/alquimista/alquimista-3.png',
-      '/assets/projects/alquimista/alquimista-4.png',
-      '/assets/projects/alquimista/alquimista-5.png',
-      '/assets/projects/alquimista/alquimista-6.png'
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352312/alquimista-2_t3srtj.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352312/alquimista-3_mliopl.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352313/alquimista-4_ncymqs.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352313/alquimista-5_k0urvt.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352314/alquimista-6_xmpyuy.png'
     ]
   },
   {
@@ -209,18 +209,18 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'GAME',
     tags: ['Godot', 'GDScript', 'Game Dev'],
     githubLink: 'https://github.com/SirAxLord/QueenVideogame',
-    image: '/assets/projects/queen/Queens.png', 
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352352/Queens_hwd1yb.png', 
     gallery: [
-      '/assets/projects/queen/Queens-1.png',
-      '/assets/projects/queen/Queens-2.png',
-      '/assets/projects/queen/Queens-3.png',
-      '/assets/projects/queen/Queens-4.png',
-      '/assets/projects/queen/Queens-5.png',
-      '/assets/projects/queen/Queens-6.png',
-      '/assets/projects/queen/Queens-7.png',
-      '/assets/projects/queen/Queens-8.png',
-      '/assets/projects/queen/Queens-9.png',
-      '/assets/projects/queen/Queens-10.png'
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352347/Queens-1_woyler.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352348/Queens-2_szvwsb.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352348/Queens-3_jzxqv8.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352349/Queens-4_gklvrh.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352350/Queens-5_vtd4dj.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352350/Queens-6_ntslag.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352351/Queens-7_cwkcfc.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352351/Queens-8_xo1olb.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352352/Queens-9_kdvpuv.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352347/Queens-10_rfdcxb.png'
     ]
   },
   {
@@ -237,16 +237,16 @@ export const PROJECTS: ProjectI18n[] = [
     category: 'WEB',
     tags: ['Laravel', 'TailwindCSS', 'Vite'],
     githubLink: 'https://github.com/SirAxLord/Biblioteca',
-    image: '/assets/projects/libreria/libreria.png',
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770352346/libreria_wehqcu.png',
     gallery: [
-      '/assets/projects/libreria/libreria-1.png',
-      '/assets/projects/libreria/libreria-2.png',
-      '/assets/projects/libreria/libreria-3.png',
-      '/assets/projects/libreria/libreria-4.png',
-      '/assets/projects/libreria/libreria-5.png',
-      '/assets/projects/libreria/libreria-6.png',
-      '/assets/projects/libreria/libreria-7.png',
-      '/assets/projects/libreria/libreria-8.png'
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352341/libreria-1_f06rpx.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352342/libreria-2_gqher7.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352342/libreria-3_lhfdkq.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352343/libreria-4_rvrgwv.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352344/libreria-5_rnn2xm.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352344/libreria-6_gvqx4k.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352345/libreria-7_wsiwzh.png',
+      'https://res.cloudinary.com/djump6tb3/image/upload/v1770352345/libreria-8_cw7k3b.png'
     ]
   }
 ];
