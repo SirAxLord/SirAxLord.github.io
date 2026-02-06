@@ -20,6 +20,7 @@ export class LanguageService {
         nav: {
           about: 'Sobre Mí',
           projects: 'Proyectos',
+          achievements: 'Logros',
           contact: 'Contacto'
         },
         hero: {
@@ -46,6 +47,10 @@ export class LanguageService {
           btn_code: 'Ver Código',
           btn_more: 'Ver Todo en GitHub',
           empty: 'No hay proyectos para mostrar aún.'
+        },
+        achievements: {
+          title: 'Logros',
+          empty: 'Aquí aparecerán mis certificaciones, eventos y participaciones.'
         },
         contact: {
           title: 'Contacto Profesional',
@@ -87,6 +92,7 @@ export class LanguageService {
         nav: {
           about: 'About Me',
           projects: 'Projects',
+          achievements: 'Achievements',
           contact: 'Contact'
         },
         hero: {
@@ -114,6 +120,10 @@ export class LanguageService {
           btn_code: 'View Code',
           btn_more: 'View All on GitHub',
           empty: 'No projects to show yet.'
+        },
+        achievements: {
+          title: 'Achievements',
+          empty: 'My certifications, events, and participation will appear here.'
         },
         contact: {
           title: 'Professional Contact',

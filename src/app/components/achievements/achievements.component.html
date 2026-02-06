@@ -1,0 +1,70 @@
+<section id="achievements" class="py-24 scroll-mt-24 bg-white dark:bg-slate-950 transition-colors duration-300">
+  <div class="max-w-screen-xl mx-auto px-4">
+    <div class="flex items-center gap-4 mb-16">
+      <h2 class="text-3xl font-bold text-slate-900 dark:text-white">
+        <span class="text-emerald-600 dark:text-emerald-500 font-mono">03.</span>
+        {{ languageService.data().achievements.title }}
+      </h2>
+      <div class="h-px bg-gray-200 dark:bg-slate-800 flex-grow max-w-xs"></div>
+    </div>
+
+    @if (achievements().length > 0) {
+      <ol class="relative border-s border-gray-200 dark:border-slate-800 ms-2">
+        @for (item of achievements(); track item.id; let i = $index) {
+          <li class="mb-10 ms-8">
+            <span class="absolute -start-2 mt-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-emerald-500 ring-4 ring-white dark:ring-slate-950"></span>
+
+            <div class="border border-gray-200 dark:border-slate-800 rounded-lg bg-white dark:bg-slate-950 p-6">
+
+              <div class="flex flex-wrap items-center gap-2 mb-4">
+                <span class="px-2 py-1 text-xs font-mono rounded uppercase tracking-wide" [ngClass]="kindBadgeClasses[item.kind]">
+                  {{ item.kindLabel }}
+                </span>
+                <p class="text-xs font-mono text-slate-500 dark:text-slate-400 uppercase tracking-widest">{{ item.dateLabel }}</p>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-4" [ngClass]="i % 2 === 1 ? 'sm:flex-row-reverse' : ''">
+                <div class="flex-1 min-w-0">
+                  <div class="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                    <h3 class="text-base sm:text-lg font-bold text-slate-900 dark:text-white leading-snug">{{ item.title }}</h3>
+                    @if (item.org) {
+                      <p class="text-sm text-slate-600 dark:text-slate-400">· {{ item.org }}</p>
+                    }
+                  </div>
+
+                  <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-relaxed">{{ item.description }}</p>
+                </div>
+
+                @if (item.image) {
+                  @if (item.kind !== 'event') {
+                    <a
+                      [href]="item.image"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="shrink-0 w-full h-56 sm:h-44 border border-gray-200 dark:border-slate-800 rounded bg-white dark:bg-slate-950 overflow-hidden block"
+                      [ngClass]="item.kind === 'certification' ? 'sm:w-72' : 'sm:w-52'"
+                    >
+                      <img [src]="item.image" [alt]="item.title" class="w-full h-full object-cover cursor-zoom-in" />
+                    </a>
+                  } @else {
+                    <div
+                      class="shrink-0 w-full h-56 sm:h-44 border border-gray-200 dark:border-slate-800 rounded bg-white dark:bg-slate-950 overflow-hidden"
+                      [ngClass]="'sm:w-52'"
+                    >
+                      <img [src]="item.image" [alt]="item.title" class="w-full h-full object-cover" />
+                    </div>
+                  }
+                }
+              </div>
+
+            </div>
+          </li>
+        }
+      </ol>
+    } @else {
+      <p class="text-slate-600 dark:text-slate-400">
+        {{ languageService.data().achievements.empty }}
+      </p>
+    }
+  </div>
+</section>
