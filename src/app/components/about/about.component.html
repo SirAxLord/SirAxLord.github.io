@@ -27,7 +27,7 @@
           </p>
   
           <div class="pt-4">
-            <a href="CV_Erik_Axel_Loredo_Lopez.pdf" target="_blank" download="CV_Erik_Axel_Loredo_Lopez.pdf" class="inline-flex items-center font-bold text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors group">
+            <a [href]="cvHref()" target="_blank" [attr.download]="cvFileName()" class="inline-flex items-center font-bold text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 transition-colors group">
               {{ languageService.data().about.btn_cv }}
               <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </a>
