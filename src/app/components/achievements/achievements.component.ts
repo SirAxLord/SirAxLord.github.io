@@ -45,7 +45,7 @@ export class AchievementsComponent {
         certification: 'Certification',
         event: 'Event',
         award: 'Achievement',
-        recognition: 'certificate of recognition',
+        recognition: 'Recognition',
         talk: 'Talk',
         other: 'Other'
       }
