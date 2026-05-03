@@ -79,6 +79,38 @@ export const ACHIEVEMENTS: AchievementItem[] = [
       en: 'Consolidated knowledge in software development, web, mobile, AI, cybersecurity, networks, and game development.'
     },
     image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1770360941/UASLP-logo_llkid4.webp'    
+  },
+  {
+    id: 5,
+    date: '2026-03',
+    kind: 'award',
+    title: {
+      es: 'Contratado en Grupo Petro como Programador Backend Python',
+      en: 'Hired at Grupo Petro as Python Backend Developer'
+    },
+    org: {
+      es: 'Grupo Petro',
+      en: 'Grupo Petro'
+    },
+    description: {
+      es: 'Fui contratado el 02 de marzo por un contrato de 6 meses para desarrollar soluciones backend con Python.',
+      en: 'I was hired on March 2 under a 6-month contract to build backend solutions with Python.'
+    },
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1777834600/PetroAxel_mfyv1v.jpg'
+  },
+  {
+    id: 6,
+    date: '2026-03',
+    kind: 'other',
+    title: {
+      es: 'Comienzo de startup Bananas Development',
+      en: 'Start of Bananas Development startup'
+    },
+    description: {
+      es: 'Inicio de una nueva etapa emprendedora con Bananas Development para crear productos y servicios de software.',
+      en: 'Beginning of a new entrepreneurial stage with Bananas Development to build software products and services.'
+    },
+    image: 'https://res.cloudinary.com/djump6tb3/image/upload/v1777833781/Logo_Bananas_cvnjpu.png'
   }
 //   {
 //     id: 5,

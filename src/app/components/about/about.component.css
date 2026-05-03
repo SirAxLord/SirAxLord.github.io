@@ -13,6 +13,7 @@
 }
 
 .icon-python { -webkit-mask-image: url('/assets/icons/python.svg'); mask-image: url('/assets/icons/python.svg'); }
+.icon-django { -webkit-mask-image: url('/assets/icons/django.svg'); mask-image: url('/assets/icons/django.svg'); }
 .icon-laravel { -webkit-mask-image: url('/assets/icons/laravel.svg'); mask-image: url('/assets/icons/laravel.svg'); }
 .icon-angular { -webkit-mask-image: url('/assets/icons/angular.svg'); mask-image: url('/assets/icons/angular.svg'); }
 .icon-mysql { -webkit-mask-image: url('/assets/icons/mysql.svg'); mask-image: url('/assets/icons/mysql.svg'); }

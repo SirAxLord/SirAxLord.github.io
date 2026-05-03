@@ -17,7 +17,7 @@ export class ProjectDetailComponent {
 
   id = Number(this.route.snapshot.paramMap.get('id'));
 
-  project = computed(() => PROJECTS.find(p => p.id === this.id));
+  project = computed(() => PROJECTS.find(p => p.id === this.id && p.status === 1));
 
   mainImageError = signal(false);
   markMainImageError() { this.mainImageError.set(true); }

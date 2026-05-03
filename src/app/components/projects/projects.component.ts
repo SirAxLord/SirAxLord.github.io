@@ -41,7 +41,9 @@ export class ProjectsComponent {
 
   projects = computed<Project[]>(() => {
     const lang = this.languageService.currentLang();
-    return this.baseProjects().map(p => ({
+    return this.baseProjects()
+      .filter(p => p.status === 1)
+      .map(p => ({
       id: p.id,
       title: p.title[lang],
       description: p.description[lang],

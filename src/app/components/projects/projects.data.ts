@@ -2,6 +2,7 @@ export type Category = 'API' | 'WEB' | 'APP' | 'GAME';
 
 export interface ProjectI18n {
   id: number;
+  status: 0 | 1;
   title: { es: string; en: string };
   description: { es: string; en: string };
   category: Category;
@@ -16,6 +17,7 @@ export interface ProjectI18n {
 export const PROJECTS: ProjectI18n[] = [
   {
     id: 1,
+    status: 1,
     title: { es: 'Chatbot Académico (Rasa)', en: 'Academic Chatbot (Rasa)' },
     description: {
       es: 'Asistente virtual conteinerizado con Docker capaz de resolver dudas sobre el plan de estudios de Ingeniería. Utiliza NLU para procesamiento de lenguaje natural y acciones personalizadas en Python para consultas de datos estructurados.',
@@ -39,6 +41,7 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 2,
+    status: 1,
     title: { es: 'API REST E-Commerce', en: 'E-Commerce REST API' },
     description: {
       es: 'Motor backend completo para comercio electrónico. Gestiona catálogos de productos y servicios con autenticación segura (Sanctum), control de roles (RBAC), filtros avanzados y documentación OpenAPI.',
@@ -57,6 +60,7 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 3,
+    status: 1,
     title: { es: 'Cliente Web E-Commerce (Flux)', en: 'E-Commerce Web Client (Flux)' },
     description: {
       es: 'Frontend reactivo desarrollado con Laravel 12 y Livewire (Flux/Volt). Consume la API externa para gestionar ventas, inventario y usuarios. Incluye carrito de compras, facturación PDF (Dompdf), paneles administrativos y autenticación 2FA con Fortify.',
@@ -95,6 +99,7 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 4,
+    status: 1,
     title: { es: 'API E-Commerce (Node.js)', en: 'E-Commerce API (Node.js)' },
     description: {
       es: 'Backend RESTful escalable construido con Express 5 y Mongoose. Gestiona autenticación segura mediante JWT, control de roles y operaciones CRUD sobre una base de datos NoSQL (MongoDB).',
@@ -116,6 +121,7 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 5,
+    status: 0,
     title: { es: 'Cliente E-Commerce (Angular 19)', en: 'E-Commerce Client (Angular 19)' },
     description: {
       es: 'Frontend de alto rendimiento construido con Angular 19 y Angular Material. Implementa SSR para SEO, gestión de estado con RxJS, carrito y paneles protegidos.',
@@ -141,6 +147,7 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 6,
+    status: 1,
     title: { es: 'Sistema de Gestión de Cine', en: 'Cinema Management System' },
     description: {
       es: 'Plataforma administrativa para cadenas de cine construida con Laravel 12 y Livewire. Importación masiva (Excel/CSV), reportes PDF y notificaciones por correo.',
@@ -174,6 +181,7 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 7,
+    status: 1,
     title: { es: 'El Último Alquimista (Beta)', en: 'The Last Alchemist (Beta)' },
     description: {
       es: 'Videojuego de acción y plataformas desarrollado en Godot Engine con arquitectura de estados, HUD e inventario.',
@@ -197,6 +205,7 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 8,
+    status: 1,
     title: { es: 'Juego de Lógica "Queen"', en: '"Queen" Logic Puzzle Game' },
     description: {
       es: 'Minijuego de estrategia en Godot 4.3. Coloca 9 coronas en un tablero 9x9 cumpliendo reglas estrictas.',
@@ -225,6 +234,7 @@ export const PROJECTS: ProjectI18n[] = [
   },
   {
     id: 9,
+    status: 1,
     title: { es: 'Sistema de Biblioteca', en: 'Library Management System' },
     description: {
       es: 'Aplicación web para la gestión de inventario, administración de usuarios, préstamos y devoluciones.',
